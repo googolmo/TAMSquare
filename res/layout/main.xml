@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <!--<ScrollView android:id="@+id/main_scrollview"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:layout_width="wrap_content"-->
+            <!--android:visibility="gone">-->
+        <LinearLayout  android:id="@+id/main_linearlayout1"
+                android:layout_height="fill_parent"
+                      android:layout_width="fill_parent"
+                      android:orientation="vertical"
+                android:visibility="gone">
+            <TextView android:id="@+id/main_title_text"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:layout_marginTop="15dip"
+                  android:layout_marginLeft="15dip"
+                  android:layout_marginRight="15dip"
+                  android:text=""
+                  android:textSize="21dip"
+                  android:singleLine="false"
+                  android:maxLines="2"
+                  android:gravity="center_vertical"/>
+            <TextView android:id="@+id/main_subtitle_text"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:layout_marginLeft="16dip"
+                  android:layout_marginRight="16dip"
+                  android:layout_marginTop="5dip"
+                  android:layout_marginBottom="5dip"
+                  android:text=""
+                  android:textSize="14dip"
+                  android:singleLine="false"
+                  android:maxLines="2"
+                  android:gravity="center_vertical"/>
+            <LinearLayout android:id="@+id/main_beenheer_layout"
+                          android:layout_height="wrap_content"
+                          android:layout_width="fill_parent"
+                    android:background="#111023">
+            <TextView android:id="@+id/main_beenheer_text"
+                      android:layout_height="wrap_content"
+                      android:layout_width="fill_parent"
+                      android:layout_marginLeft="10dip"
+                      android:layout_marginRight="10dip"
+                    android:text="@string/main_beenheer_title_text"/>
+            </LinearLayout>
+
+            <GridView android:id="@+id/main_beenheer_gridview"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:numColumns="1"
+                      android:stretchMode="columnWidth"
+                      android:gravity="center"
+                      android:horizontalSpacing="15dip"
+                      android:layout_marginTop="10dip"
+                      android:layout_marginLeft="15dip"
+                      android:layout_marginRight="15dip"
+                      android:layout_marginBottom="15dip"
+                    />
+        </LinearLayout>
+    <!--</ScrollView>-->
+
+    <ProgressBar android:id="@+id/main_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_margin="5dip"/>
+
+</LinearLayout>

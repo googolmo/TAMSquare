@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/checkin_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="15dip"
+        android:hint="@string/checkin_text"
+        android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+        android:imeOptions="actionDone"
+        android:maxLength="140"
+        android:maxLines="3"
+        android:singleLine="false"
+            android:gravity="bottom"/>
+
+    <LinearLayout
+        android:id="@+id/checkin_layout_sharewithfriends"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:orientation="horizontal" >
+
+        <TextView android:id="@+id/checkin_share_friends_text"
+                  android:layout_width="wrap_content"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="5"
+                  android:text="@string/checkin_sharewithfriend"
+                  android:gravity="center_vertical"/>
+
+        <CheckBox android:id="@+id/checkin_share_friends_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/checkin_layout_sharewithtwitter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginBottom="15dip">
+
+
+        <TextView
+                android:id="@+id/checkin_share_twitter_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:text="@string/checkin_sharewithtwitter"
+                android:gravity="center_vertical"/>
+
+        <CheckBox
+            android:id="@+id/checkin_share_twitter_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/checkin_layout_sharewithfb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginBottom="15dip">
+
+
+        <TextView
+                android:id="@+id/checkin_share_fb_text"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:text="@string/checkin_sharewithfb"
+                android:gravity="center_vertical"/>
+
+        <CheckBox
+                android:id="@+id/checkin_share_fb_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
